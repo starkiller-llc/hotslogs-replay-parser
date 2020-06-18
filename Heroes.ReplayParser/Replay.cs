@@ -90,6 +90,9 @@ namespace Heroes.ReplayParser
 
         public bool IsGameEventsParsedSuccessfully { get; set; } = false;
         public bool? IsStatisticsParsedSuccessfully { get; set; } = null;
+
+        /// <summary> Fingerprint (unique identifier) from HOTSAPI for replays parsed from that website </summary>
+        public string HOTSAPIFingerprint { get; set; }
     }
 
     public class PeriodicXPBreakdown
